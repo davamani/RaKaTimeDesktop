@@ -1,0 +1,48 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="XyzTime.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="UserTable" Type="System.Data.DataTable" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="TaskTable" Type="System.Data.DataTable" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="StoragePath" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="UserId" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="UserName" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="BackAppUrl" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="BackAppToken" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="BackUploadUrl" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="BackUploadToken" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="BackUploadTokenGeneratedDate" Type="System.DateTime" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="AlertTitle" Type="System.String" Scope="User">
+      <Value Profile="(Default)">MySheet.Cloud - Alert!</Value>
+    </Setting>
+    <Setting Name="XyzTime_AWebTime_UserInfo" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">https://webtime20200503112752.azurewebsites.net/UserInfo.asmx</Value>
+    </Setting>
+    <Setting Name="StorageAccountTable" Type="System.Data.DataTable" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="TimeToken" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+  </Settings>
+</SettingsFile>

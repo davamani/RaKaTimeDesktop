@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="GetUserInfoV3">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="str_Email" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="str_Password" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUserInfoV3Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetUserInfoV3Result" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUserInfoV2">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="str_Email" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="str_Password" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUserInfoV2Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetUserInfoV2Result" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUserInfo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="str_Email" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="str_Password" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUserInfoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetUserInfoResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDashboardToken">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="str_UserToken" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDashboardTokenResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetDashboardTokenResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PutUserTimeLog">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UserId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="AppName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="AppTitle" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="AppData" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="LogOn" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="KeyStroke" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="MouseClick" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="MouseMove" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="TimeSec" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PutUserTimeLogResponse">
+        <s:complexType />
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GetUserInfoV3SoapIn">
+    <wsdl:part name="parameters" element="tns:GetUserInfoV3" />
+  </wsdl:message>
+  <wsdl:message name="GetUserInfoV3SoapOut">
+    <wsdl:part name="parameters" element="tns:GetUserInfoV3Response" />
+  </wsdl:message>
+  <wsdl:message name="GetUserInfoV2SoapIn">
+    <wsdl:part name="parameters" element="tns:GetUserInfoV2" />
+  </wsdl:message>
+  <wsdl:message name="GetUserInfoV2SoapOut">
+    <wsdl:part name="parameters" element="tns:GetUserInfoV2Response" />
+  </wsdl:message>
+  <wsdl:message name="GetUserInfoSoapIn">
+    <wsdl:part name="parameters" element="tns:GetUserInfo" />
+  </wsdl:message>
+  <wsdl:message name="GetUserInfoSoapOut">
+    <wsdl:part name="parameters" element="tns:GetUserInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetDashboardTokenSoapIn">
+    <wsdl:part name="parameters" element="tns:GetDashboardToken" />
+  </wsdl:message>
+  <wsdl:message name="GetDashboardTokenSoapOut">
+    <wsdl:part name="parameters" element="tns:GetDashboardTokenResponse" />
+  </wsdl:message>
+  <wsdl:message name="PutUserTimeLogSoapIn">
+    <wsdl:part name="parameters" element="tns:PutUserTimeLog" />
+  </wsdl:message>
+  <wsdl:message name="PutUserTimeLogSoapOut">
+    <wsdl:part name="parameters" element="tns:PutUserTimeLogResponse" />
+  </wsdl:message>
+  <wsdl:portType name="UserInfoSoap">
+    <wsdl:operation name="GetUserInfoV3">
+      <wsdl:input message="tns:GetUserInfoV3SoapIn" />
+      <wsdl:output message="tns:GetUserInfoV3SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserInfoV2">
+      <wsdl:input message="tns:GetUserInfoV2SoapIn" />
+      <wsdl:output message="tns:GetUserInfoV2SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserInfo">
+      <wsdl:input message="tns:GetUserInfoSoapIn" />
+      <wsdl:output message="tns:GetUserInfoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDashboardToken">
+      <wsdl:input message="tns:GetDashboardTokenSoapIn" />
+      <wsdl:output message="tns:GetDashboardTokenSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PutUserTimeLog">
+      <wsdl:input message="tns:PutUserTimeLogSoapIn" />
+      <wsdl:output message="tns:PutUserTimeLogSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="UserInfoSoap" type="tns:UserInfoSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetUserInfoV3">
+      <soap:operation soapAction="http://tempuri.org/GetUserInfoV3" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserInfoV2">
+      <soap:operation soapAction="http://tempuri.org/GetUserInfoV2" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserInfo">
+      <soap:operation soapAction="http://tempuri.org/GetUserInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDashboardToken">
+      <soap:operation soapAction="http://tempuri.org/GetDashboardToken" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PutUserTimeLog">
+      <soap:operation soapAction="http://tempuri.org/PutUserTimeLog" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="UserInfoSoap12" type="tns:UserInfoSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetUserInfoV3">
+      <soap12:operation soapAction="http://tempuri.org/GetUserInfoV3" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserInfoV2">
+      <soap12:operation soapAction="http://tempuri.org/GetUserInfoV2" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserInfo">
+      <soap12:operation soapAction="http://tempuri.org/GetUserInfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDashboardToken">
+      <soap12:operation soapAction="http://tempuri.org/GetDashboardToken" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PutUserTimeLog">
+      <soap12:operation soapAction="http://tempuri.org/PutUserTimeLog" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="UserInfo">
+    <wsdl:port name="UserInfoSoap" binding="tns:UserInfoSoap">
+      <soap:address location="https://webtime20200503112752.azurewebsites.net/UserInfo.asmx" />
+    </wsdl:port>
+    <wsdl:port name="UserInfoSoap12" binding="tns:UserInfoSoap12">
+      <soap12:address location="https://webtime20200503112752.azurewebsites.net/UserInfo.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
