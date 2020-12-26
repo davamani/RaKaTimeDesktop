@@ -29,6 +29,7 @@ namespace XyzTime
              Properties.Settings.Default.StoragePath = Application.UserAppDataPath;
   
             //setup local database in user desktop machine
+            
             SqlLiteDb SLD = new SqlLiteDb();
             SLD.SetupDatabase();
 

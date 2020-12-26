@@ -74,7 +74,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>337OLscykeWWZVxnqPhUfPqVFXe3u3yIv+0QKTqycD8=</dsig:DigestValue>
+        <dsig:DigestValue>LPwhC7e7YFsH4No5T9TuoxzMpU1I+IvH03q2V+FR0wE=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -103,14 +103,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="RaKaTimeLog.exe" size="323512">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="RaKaTimeLog.exe" size="323560">
       <assemblyIdentity name="RaKaTimeLog" version="2.0.0.6" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>wE9s/RcpXYPlXE+4YT7iBwNG5Gnf5AjZDlgz13V9bgk=</dsig:DigestValue>
+        <dsig:DigestValue>i4/37DZ7ljAwPJ6vB32cnvMai2svRuvMXxjZXmw0gZs=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

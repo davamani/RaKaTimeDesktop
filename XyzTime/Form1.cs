@@ -472,7 +472,7 @@ namespace XyzTime
 
                 //time log & picturelog
                 string str_Sql = @"Select LogOn, substr(appname,1,254) AppName, substr(AppData,1,999) AppData, substr(AppTitle,1,999) AppTitle,
-                         KeyStroke,MouseClick,MouseMove, TimeSec from TimeLog order by LogOn  LIMIT 20;
+                         KeyStroke,MouseClick,MouseMove, TimeSec from TimeLog order by LogOn  LIMIT 1000;
                         Select FileName, FileCreatedOn from CaptureScreen;";
                 DataSet ds = SDB.GetDataSet(str_Sql);
                 ds.Tables[0].TableName = "timelog";
@@ -500,7 +500,7 @@ namespace XyzTime
                         var responseContent = await response.Content.ReadAsStringAsync().ConfigureAwait(false);
                         if (responseContent.ToString() == "Inserted")
                         {
-                            this.SDB.GetDataSet("delete from TimeLog where LogSeq in (select LogSeq from TimeLog order by Logon LIMIT 20)");
+                            this.SDB.GetDataSet("delete from TimeLog where LogSeq in (select LogSeq from TimeLog order by Logon LIMIT 1000)");
                             SDB.ExecuteQuery("delete from CaptureScreen");
                             int_TotalRows = Convert.ToInt32(this.SDB.GetDataSet("select count(*) from TimeLog").Tables[0].Rows[0][0]);
                             lbl_SyncOn.Text = "last sync: " + DateTime.Now.ToLongTimeString();

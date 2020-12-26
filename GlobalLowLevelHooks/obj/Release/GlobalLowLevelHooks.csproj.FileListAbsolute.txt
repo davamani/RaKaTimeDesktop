@@ -10,3 +10,10 @@ G:\XyzTime\GlobalLowLevelHooks\obj\Release\GlobalLowLevelHooks.csproj.CoreCompil
 G:\XyzTime\GlobalLowLevelHooks\obj\Release\GlobalLowLevelHooks.dll
 G:\XyzTime\GlobalLowLevelHooks\obj\Release\GlobalLowLevelHooks.pdb
 G:\XyzTime\GlobalLowLevelHooks\obj\Release\GlobalLowLevelHooks.csprojAssemblyReference.cache
+E:\RaKaTimeLogDesktop\GlobalLowLevelHooks\bin\Release\GlobalLowLevelHooks.XML
+E:\RaKaTimeLogDesktop\GlobalLowLevelHooks\bin\Release\GlobalLowLevelHooks.dll
+E:\RaKaTimeLogDesktop\GlobalLowLevelHooks\bin\Release\GlobalLowLevelHooks.pdb
+E:\RaKaTimeLogDesktop\GlobalLowLevelHooks\obj\Release\GlobalLowLevelHooks.csprojAssemblyReference.cache
+E:\RaKaTimeLogDesktop\GlobalLowLevelHooks\obj\Release\GlobalLowLevelHooks.csproj.CoreCompileInputs.cache
+E:\RaKaTimeLogDesktop\GlobalLowLevelHooks\obj\Release\GlobalLowLevelHooks.dll
+E:\RaKaTimeLogDesktop\GlobalLowLevelHooks\obj\Release\GlobalLowLevelHooks.pdb

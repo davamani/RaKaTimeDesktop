@@ -4,3 +4,9 @@ G:\RaKaTimeLogDesktop\GlobalLowLevelHooks\obj\Debug\GlobalLowLevelHooks.csproj.C
 G:\RaKaTimeLogDesktop\GlobalLowLevelHooks\obj\Debug\GlobalLowLevelHooks.dll
 G:\RaKaTimeLogDesktop\GlobalLowLevelHooks\obj\Debug\GlobalLowLevelHooks.pdb
 G:\RaKaTimeLogDesktop\GlobalLowLevelHooks\obj\Debug\GlobalLowLevelHooks.csprojAssemblyReference.cache
+E:\RaKaTimeLogDesktop\GlobalLowLevelHooks\bin\Debug\GlobalLowLevelHooks.dll
+E:\RaKaTimeLogDesktop\GlobalLowLevelHooks\bin\Debug\GlobalLowLevelHooks.pdb
+E:\RaKaTimeLogDesktop\GlobalLowLevelHooks\obj\Debug\GlobalLowLevelHooks.csprojAssemblyReference.cache
+E:\RaKaTimeLogDesktop\GlobalLowLevelHooks\obj\Debug\GlobalLowLevelHooks.csproj.CoreCompileInputs.cache
+E:\RaKaTimeLogDesktop\GlobalLowLevelHooks\obj\Debug\GlobalLowLevelHooks.dll
+E:\RaKaTimeLogDesktop\GlobalLowLevelHooks\obj\Debug\GlobalLowLevelHooks.pdb

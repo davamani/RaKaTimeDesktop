@@ -14,7 +14,7 @@ namespace XyzTime
         SQLiteConnection conn;
         public SqlLiteDb()
         {
-            conn = new SQLiteConnection("Data Source=local_rakatime.db; Version = 3; New = True; Compress = True; ");
+            conn = new SQLiteConnection("Data Source=C:\\Temp\\local_rakatime.db; Version = 3; New = True; Compress = True; ",true);
 
         }
 
@@ -46,6 +46,7 @@ namespace XyzTime
             sc.Parameters.AddWithValue("@FileName", FileName);
             this.ExecuteQuery(sc);
         }
+
 
         //   str_CreateTableSql = @"Create Table IF NOT EXISTS CaptureScreen(FileName text, FileCreatedOn Date DEFAULT CURRENT_TIMESTAMP)";
 
@@ -110,6 +111,8 @@ namespace XyzTime
         {
              try
             {
+                
+
                 if (conn.State != System.Data.ConnectionState.Open) conn.Open();
 
               
